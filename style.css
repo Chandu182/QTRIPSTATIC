@@ -1,0 +1,223 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  html,
+  body {
+    position: relative;
+  }
+  
+  body {
+    overflow-y: auto;
+    min-height: 100vh;
+  }
+  .hero-image{
+    height:65vh ;
+    background-image: url('/assets/hero.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .hero-image::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 65vh;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .hero-heading{
+    color: rgb(248, 250, 250);
+    font-size: 2.4rem;
+    position: relative;
+  }
+  .hero-sub-heading{
+    color: rgb(248, 250, 250);
+    font-size: 1.2rem;
+    position: relative;
+  }
+  .hero-input{
+    position: relative;
+    width: 80%;
+  }
+  .hero-input input{
+    border: none;
+    border-radius: .5em;
+    width: 100%;
+    padding: 1em;
+  }
+  .img-container{
+    overflow: hidden;
+  }
+  .container1 {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+  }
+  .text {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .tile .tile-img{
+    transition: transform .5s, filter .3s ease-in-out , overflow .5s;
+    height: auto;
+  }
+  .tile .tile-img:hover{
+    transform: scale(1.03);
+    filter: brightness(50%);
+    overflow: hidden;
+  }
+  .main-heading{
+    font-size: 2.4rem;
+    margin: 1em 0em 0em .6em;
+  }
+  .main-subheading{
+    font-size: 1.6rem;
+    margin: .5em 0em 0em 1em;
+  }
+  .container2{
+    overflow: hidden;
+  }
+  .crad-holder{
+    overflow: hidden;
+  }
+  .card-body{
+    display: flex;
+    justify-content: space-between;
+  }
+  .card .card-img-top{
+    transition:filter .3s ease-in-out , overflow .5s;
+  }
+  .card .card-img-top:hover{
+    filter: brightness(50%);
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .resort-container{
+    padding: 2em;
+    margin: 0em;
+  }
+  .info-container{
+    width: 70%;
+    border: 1px solid lightgray;
+    border-radius: .5em;
+  }
+  .image-container{
+    width: 100%;
+    margin: 0;
+  }
+  .main-image{
+    width: 70%;
+    margin: 1em 0em;
+  }
+  .res1{
+    width: 100%;
+  }
+  .side-images{
+    width: 30%;
+    margin: 1em;
+  }
+  .res2{margin-bottom: 1em;}
+  .res3{margin-top: 1em;}
+  .res2,.res3{
+    width: 100%;
+  }
+  .inclusions ul,.kbyg ul,.ni ul{
+    padding: 1em;
+    margin-left: 2.5em;
+    line-height: 1.9;
+  }
+  .info{
+    padding: 1em;
+  }
+  .specialities{
+    padding: 1em;
+    padding-top:.2em ;
+  }
+  .soldout{
+    height: 40vh;
+  }
+  .soldoutcontainer{
+    position: fixed;
+    border: 1px solid lightgray;
+    margin-left: 0px;
+    padding: 5px 25px;
+    border-radius: 8px;
+  }
+  .soldoutcontainer h1,.soldoutcontainer p{
+    padding: 10px 0px;
+    margin: 0px;
+  }
+  footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: 768px) {
+    .navbar-collapse {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .hero-heading{
+        font-size: 1.8rem;
+    }
+    .hero-sub-heading{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .main-heading{
+      font-size: 2rem;
+      margin: 1em 0em 0em .6em;
+    }
+    .main-subheading{
+      font-size: 1.3rem;
+      margin: .5em 0em 0em 1em;
+      text-align: justify;
+    }
+    .container2{
+      margin: 0;
+      padding: 0;
+    }
+    .card-body h5{
+      font-size: .7rem;
+      font-weight: 800;
+    }
+    .price{
+      font-size: .7rem;
+    }
+    .resort-container{
+      padding: 0;
+      margin: 0;
+    }
+    .info-container{
+      width: 100%;
+      margin: 0;
+    }
+    .main-image{
+      width: 100%;
+      margin: 1em 0em;
+    }
+    .side-images{
+      width: 0%;
+      margin: 0;
+    }
+    .res2,.res3{
+      display: none;
+      width: 0;
+      margin: 0;
+    }
+    .side-images{
+      width: 0%;
+    }
+    .soldout{
+      width: 100%;
+      margin-top: 2em;
+      padding: 0;
+    }
+    .soldoutcontainer{
+      width: 100%;
+    }
+  }
