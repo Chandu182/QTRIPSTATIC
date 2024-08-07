@@ -80,7 +80,11 @@
   .container2{
     overflow: hidden;
   }
-  .crad-holder{
+  .card{
+    width:100%;
+    height:60vh;
+   }
+  .card-holder{
     overflow: hidden;
   }
   .card-body{
@@ -163,7 +167,7 @@
     justify-content: center;
     align-items: center;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 768px ) and (min-width:375px){
     .navbar-collapse {
       flex-direction: column;
       align-items: flex-start;
@@ -187,6 +191,77 @@
     .container2{
       margin: 0;
       padding: 0;
+    }
+    .card{
+      height: 60vh;
+    }
+    .card-body h5{
+      font-size: .7rem;
+      font-weight: 800;
+    }
+    .price{
+      font-size: .7rem;
+    }
+    .resort-container{
+      padding: 0;
+      margin: 0;
+    }
+    .info-container{
+      width: 100%;
+      margin: 0;
+    }
+    .main-image{
+      width: 100%;
+      margin: 1em 0em;
+    }
+    .side-images{
+      width: 0%;
+      margin: 0;
+    }
+    .res2,.res3{
+      display: none;
+      width: 0;
+      margin: 0;
+    }
+    .side-images{
+      width: 0%;
+    }
+    .soldout{
+      width: 100%;
+      margin-top: 2em;
+      padding: 0;
+    }
+    .soldoutcontainer{
+      width: 100%;
+    }
+  }
+  @media (max-width: 375px ){
+    .navbar-collapse {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .hero-heading{
+        font-size: 1.8rem;
+    }
+    .hero-sub-heading{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .main-heading{
+      font-size: 2rem;
+      margin: 1em 0em 0em .6em;
+    }
+    .main-subheading{
+      font-size: 1.3rem;
+      margin: .5em 0em 0em 1em;
+      text-align: justify;
+    }
+    .container2{
+      margin: 0;
+      padding: 0;
+    }
+    .card{
+      height: 30vh;
     }
     .card-body h5{
       font-size: .7rem;
