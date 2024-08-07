@@ -204,11 +204,11 @@
       object-fit: cover;
     }
     .card-body h5{
-      font-size: .7rem;
+      font-size: 1rem;
       font-weight: 800;
     }
     .price{
-      font-size: .7rem;
+      font-size: 1rem;
     }
     .resort-container{
       padding: 0;
@@ -269,10 +269,10 @@
       padding: 0;
     }
     .card{
-      height: 30vh;
+      height: 25vh;
     }
     .card-img-top{
-      height: 65%;
+      height: 70%;
       object-fit: cover;
     }
     .card-body h5{
